@@ -1,0 +1,16 @@
+<div class="grey top-space">
+  <div class="row">
+    <div class="gris text-center">
+      <%= @article.comments.count %> Comentario(s)
+    </div>
+  </div>
+
+  <div class="top-space">
+    <%= render "comments/form" %>
+  </div>
+
+  <div class="top-space">
+    <%= render @article.comments %>
+  </div>
+
+</div>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="SQLite -" uuid="64f4425a-2ea1-4c37-bdbb-10170f7efd0e">
+      <secret-storage>master_key</secret-storage>
+    </data-source>
+    <data-source name="Rails blog: development" uuid="010a117b-a6a0-49d6-a437-daeef865985e" />
+    <data-source name="Rails blog: test" uuid="453c302d-fa5b-4426-b056-7ffaf982b17c" />
+  </component>
+</project>

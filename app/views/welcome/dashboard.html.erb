@@ -1,0 +1,20 @@
+<div class="col-md field">
+  <%= link_to "Nuevo Articulo", new_article_path,class:" button "%>
+</div>
+
+<% @articles.ultimos.each do |article| %>
+    <h1> <%= link_to article.title.html_safe, article %> </h1>
+
+    <div>
+     <h3><%= article.body.html_safe %></h3> <%= link_to "ELIMINAR", article, method: :delete, class:"btn white red" %>
+
+      <%if article.may_publish?%>
+      <%= link_to "PUBLICAR", "/articles/#{article.id }/publish", method: :put, class:"btn white green" %>
+          <%end%>
+
+      <%if article.may_unpublish?%>
+          <%= link_to "DESPUBLICAR", "/articles/#{article.id }/unpublish", method: :put, class:"btn white yellow" %>
+      <%end%>
+    </div>
+
+<%end%>

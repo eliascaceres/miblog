@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container" style="margin:0 auto;">
+  <h1 style="color: <%=@category.color%>;"><%= @category.name %></h1>
+  <h3 style="color: <%=@category.color%>;"><%= link_to "Articulos", articles_path%></h3>
+  <div class="row">
+    <%= render @category.articles %>
+  </div>
+</div>
+
+
+
+
+
